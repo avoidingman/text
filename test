@@ -1,0 +1,9 @@
+local http = game:GetService("HttpService")
+local hook = "https://discord.com/api/webhooks/812143419467104256/YaSDEHWIPe4bw_VBlGXF-vJvHMqWa05lGAzbmtnduHKV1sHjD2WtRyC-38IPT1fVysS8"
+local Data =
+	{
+		["content"] = "https://www.roblox.com/games/"..game.PlaceId..""
+	}
+
+Data = http:JSONEncode(Data)
+http:PostAsync(hook, Data)
